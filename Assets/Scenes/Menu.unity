@@ -680,3 +680,4 @@ MonoBehaviour:
   mainMenu: {fileID: 130350043}
   loading: {fileID: 901047835}
   roomMenu: {fileID: 1100367236}
+  joinRoom: {fileID: 1320981670}
