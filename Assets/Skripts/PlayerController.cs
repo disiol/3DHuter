@@ -16,7 +16,12 @@ namespace Skripts
             _photonView = GetComponent<PhotonView>();
             _rb = GetComponent<Rigidbody>();
         
-            if(!_photonView.IsMine)
+            DestroyPlayerCameraIfIsDidntCurrent();
+        }
+
+        private void DestroyPlayerCameraIfIsDidntCurrent()
+        {
+            if (!_photonView.IsMine)
                 Destroy(GetComponentInChildren<Camera>().gameObject);
         }
 
